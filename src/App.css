@@ -1,20 +1,32 @@
 
 .App{
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   height: 100vh;
 }
+#bg-image{
+  width: 100vw;
+  height: 100vh;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #card-playlist {
+  position: absolute;
+  z-index: 2;
   background-color: rgb(255, 255, 255, 0.5);
   display: inline-flex;
   border: solid 1px black;
   max-width: 40vw;
-  padding: 1.5em;
+  padding: 1em;
   border-radius: 1em;
   border:none;
-  box-shadow: .2em .2em .8em rgb(199, 199, 199);
+  box-shadow: .1em .1em .5em rgb(0, 0, 0, 0.2);
 }
 #track-img{
   width: 10vw;
@@ -28,13 +40,14 @@
   margin-top: 0;
 }
 #track-button{
-  background-color: rgb(216, 216, 216);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 2em;
   border: none;
   padding: .7em .7em .7em .8em;
+  box-shadow: .1em .1em .2em rgb(0, 0, 0, 0.2);
 }
 #track-button:hover{
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(0, 0, 0, .3);
 }
 .triangle-right {
 	width: 0;
