@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  height: 100vh;
+  height: 90vh;
+  max-width: 90vw;
 }
 #bg-image{
   width: 100vw;
@@ -17,10 +18,10 @@
   background-size: cover;
 }
 #card-playlist {
-  position: absolute;
-  z-index: 2;
+  /* position: absolute; */
+  /* z-index: 2; */
   background-color: rgb(255, 255, 255, 0.5);
-  display: inline-flex;
+  display: flex;
   border: solid 1px black;
   max-width: 40vw;
   padding: 1em;
@@ -36,8 +37,9 @@
 .detail{
   margin-left: 1em;
 }
-#track-title{
+.track-title{
   margin-top: 0;
+  font-weight: 700;
 }
 #track-button{
   background-color: rgba(0, 0, 0, 0.4);
