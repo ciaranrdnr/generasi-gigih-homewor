@@ -1,4 +1,3 @@
-// import data from '../../data/0-2-3';
 import Text from '../text/index';
 import Button from '../button/index';
 
@@ -8,7 +7,7 @@ const Track = (props) =>{
                     <img id="track-img" src={props.url} alt={props.title} />
                     <div >
                         <Text class="detail track-title" value={props.title} />
-                        <Text class="detail track-artist" value={props.artist} />
+                        <Text class="detail track-artist" value={props.artist}/>
                         <Text class="detail track-album" value={props.album} />
                         <Button id="track-button" class="detail"/>
                     </div>
